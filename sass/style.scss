@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*
+@font-face {
+	font-family: 'Roboto';
+	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
+		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+}
+*/
+
+$roboto-font: 'Roboto';
+$shrikhland-font: 'Shrikhand';
+
+/*
+h1 {
+	font-family: $roboto-font, sans-serif;
+}
+*/
+
 h1,
 h2,
-h3,
-h4 {
-  font-family: Shrinkland;
+h3 {
+  font-family: $roboto-font;
 }
 
 ul,
@@ -37,14 +56,18 @@ header {
   width: 100%;
   font-family: Roboto;
   .top__location {
+    display: flex;
     justify-content: center;
     padding: 15px 0px;
     border-top: #eaeaea solid 2px;
+    width: 100%;
+    border-top: #dbdbdb solid 2px;
+    background-color: #dbdbdb
   }
   .top__container {
     flex-direction: column;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: #f4f4f4;
   }
 }
 
@@ -70,7 +93,7 @@ input {
   align-items: center;
   width: 90%;
   height: 70px;
-  background-color: #f6f6f6;
+  background-color: #f4f4f4;
   border-radius: 20px;
   box-shadow: 1px 2px 8px #c1c1c1;
   margin-bottom: 15px;
@@ -106,9 +129,11 @@ input {
   margin: 0px 20px;
 }
 
+/* a terminer/verifier
 .content h3 {
   margin: ;
 }
+*/
 
 .new {
   font-size: 15px;
@@ -127,5 +152,123 @@ footer {
   background-color: #353535;
   color: white;
   padding: 5px 0px;
-  font-family: Shrikland;
+  font-family: $shrikhland-font;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+image_presentation img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  min-height: 350px;
+  background-position: top;
+}
+
+header {
+  display: block;
+}
+
+nav {
+  display: block;
+}
+
+header p {
+  text-align: center;
+  font-size: 30px;
+  font-family: $shrikhland-font;
+  font-weight: bold;
+}
+
+.image_presentation {
+  width: 100%;
+  height: 250px;
+}
+
+.image_presentation img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  min-height: 350px;
+  background-position: top;
+}
+
+.carte_top__name {
+  font-size: 30px;
+}
+
+.menu_repas__name {
+  text-transform: uppercase;
+  border-bottom: 3px solid #99e2d0;
+  width: 3px;
+}
+
+.carte {
+  position: relative;
+  padding: 30px 20px;
+  background-color: #f4f4f4;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.menu_repas {
+  margin-top: 30px;
+}
+
+.plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 15px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 2px 8px #c1c1c1;
+  font-weight: bold;
+  position: relative;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  background-color: #9356dc;
+  font-size: 15px;
+  color: white;
+  border-radius: 100px;
+  box-shadow: 1px 2px 8px #c1c1c1;
+  margin-top: 40px ;
+  margin-bottom: 50px;
+}
+
+.btn_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_commander {
+  margin: 50px auto;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 5px 0px;
+}
+
+h4 {
+  margin-left: 40px;
+  font-weight: 400px;
+  font-family: $shrikhland-font;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
