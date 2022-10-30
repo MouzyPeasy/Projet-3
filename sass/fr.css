@@ -1,0 +1,7 @@
+image_presentation img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  min-height: 350px;
+  background-position: top;
+}
